@@ -1,0 +1,149 @@
+body {
+  font-family: 'Inter';
+  background-color: var(--light-blue-100);
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  padding:  24px 16px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 64px;
+}
+
+.content-logo {
+  margin: 0 0 56px 0;
+}
+
+.content-input {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-button {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.content-output {
+  padding: 32px;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  text-align: center;
+  min-width: 400px;
+}
+
+.content-input span {
+  margin-right: 8px;
+}
+
+.content-input p {
+  color: var(--dark-blue-300);
+  font-size: 12px;
+  display: flex;
+}
+
+.content-output h1 {
+  font-size: 24px;
+  color: var(--gray-400);
+  margin-bottom: 16px;
+}
+
+.btn {
+  border-radius: 24px;
+  padding: 24px;
+  border: none;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: var(--dark-blue-300);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--light-blue-200);
+  color: var(--dark-blue-300);
+  border: 1px solid var(--dark-blue-300);
+}
+
+.p-response {
+  font-size: 24px;
+  text-align: left;
+  color: var(--gray-400);
+  padding-bottom: 20px;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-space-between {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+textarea {
+  width: 100%;
+  min-height: 290px;
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  font-family: 'Inter';
+  color: var(--dark-blue-300);
+  outline: none;
+  margin-bottom: 48px;
+  resize: horizontal;
+  resize: none;
+}
+
+textarea::placeholder {
+  font-family: 'Inter';
+  color: var(--dark-blue-300);
+  font-size: 32px;
+}
+
+.avatar {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .content-button {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    flex-direction: row;
+    gap: 80px;
+  }
+  .content-input {
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 32px;
+  }
+
+  .content-output {
+    width: 400px;
+  }
+
+  .avatar {
+    display: block;
+  }
+
+  textarea {
+    min-height: 340px;
+  }
+}

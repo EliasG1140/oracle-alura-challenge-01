@@ -4,9 +4,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
-  <title>Document</title>
+  <script src="./js/index.js" defer type="module"></script>
+  <title>Alura encriptador</title>
 </head>
-<body>  
+
+<body> 
+  <main>
+    <div class="content-logo">
+      <img src="assets/logo.svg" alt="Logo-Alura">
+    </div>
+
+    <div class="content-input">
+      <textarea autocomplete="off" id="message" placeholder="Ingrese el texto aqui"></textarea>
+
+      <p>
+        <span>
+          <object data="assets/info.svg" type="image/svg+xml"></object>
+        </span>
+        Solo letras minúsculas y sin acentos
+      </p>
+
+      <div class="content-button">
+        <button class="btn btn-primary" id="btnEncrypt">Encriptar</button>
+        <button class="btn btn-secondary" id="btnDecrypt">Desencriptar</button>
+      </div>
+    </div>
+
+    <div class="content-output flex-center">
+    </div>
+
+  </main>
 </body>
 </html>
